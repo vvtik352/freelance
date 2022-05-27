@@ -4,16 +4,20 @@ body {
     margin: 0;
 }
 
-h1, h2, h3, p {
+h1,
+h2,
+h3,
+p {
     margin: 0;
     padding: 0;
 }
 
-
+/* HEADER */
 
 .header {
     display: flex;
 
+    padding-bottom: 500px;
 }
 
 .header__logo {
@@ -22,6 +26,7 @@ h1, h2, h3, p {
     flex-direction: column;
     padding-top: 52px;
     margin-left: auto;
+
 }
 
 .header__logo-image {
@@ -65,11 +70,13 @@ h1, h2, h3, p {
 
     font-size: 20px;
 }
-.number{
+
+.number {
     font-family: "Gill";
 
     font-size: 20;
 }
+
 .cloud {
     box-shadow: 2px 1px 6px black;
     color: black;
@@ -86,4 +93,24 @@ h1, h2, h3, p {
     border-radius: 120px;
     border-bottom-right-radius: 0;
     border-top-right-radius: 160px;
+}
+
+
+/*  COMPANY */
+.company {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+}
+
+
+
+.company__title {
+    font-family: "Gill";
+    font-size: 46px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
 }
