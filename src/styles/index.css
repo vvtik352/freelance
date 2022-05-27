@@ -1,3 +1,5 @@
+@import url("../fonts/fonts.css");
+
 body {
     margin: 0;
 }
@@ -36,6 +38,7 @@ h1, h2, h3, p {
 
 .header__title {
     color: white;
+    font-family: "Gill";
     font-size: 79px;
 
     padding-bottom: 92px;
@@ -43,6 +46,8 @@ h1, h2, h3, p {
 
 .header__subtitle {
     color: white;
+    font-family: "Gill";
+
     font-size: 31px;
 }
 
@@ -56,9 +61,13 @@ h1, h2, h3, p {
 
 .header__option {
     padding: 8px;
+    font-family: "Gill";
+
     font-size: 20px;
 }
 .number{
+    font-family: "Gill";
+
     font-size: 20;
 }
 .cloud {
