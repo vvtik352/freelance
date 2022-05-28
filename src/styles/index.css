@@ -1,116 +1,159 @@
 @import url("../fonts/fonts.css");
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 h1,
 h2,
 h3,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* HEADER */
 
 .header {
-    display: flex;
+  display: flex;
 
-    padding-bottom: 500px;
+  padding-bottom: 500px;
 }
 
 .header__logo {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding-top: 52px;
-    margin-left: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 52px;
+  margin-left: auto;
 
 }
 
 .header__logo-image {
-    width: 164px;
-    margin: auto;
+  width: 164px;
+  margin: auto;
 
-    padding-bottom: 86px;
+  padding-bottom: 86px;
 }
 
 .header__background {
-    position: absolute;
-    z-index: -1;
+  position: absolute;
+  z-index: -1;
 }
 
 .header__title {
-    color: white;
-    font-family: "Gill";
-    font-size: 79px;
+  color: white;
+  font-family: "Gill";
+  font-size: 79px;
 
-    padding-bottom: 92px;
+  padding-bottom: 92px;
 }
 
 .header__subtitle {
-    color: white;
-    font-family: "Gill";
+  color: white;
+  font-family: "Gill";
 
-    font-size: 31px;
+  font-size: 31px;
 }
 
 .header__options {
-    padding-top: 73px;
-    margin-left: auto;
-    color: white;
-    margin-right: auto;
-    display: flex;
+  padding-top: 73px;
+  margin-left: auto;
+  color: white;
+  margin-right: auto;
+  display: flex;
 }
 
 .header__option {
-    padding: 8px;
-    font-family: "Gill";
+  padding: 8px;
+  font-family: "Gill";
 
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .number {
-    font-family: "Gill";
+  font-family: "Gill";
 
-    font-size: 20;
+  font-size: 20;
 }
 
 .cloud {
-    box-shadow: 2px 1px 6px black;
-    color: black;
-    margin-left: 46px;
-    padding-left: 12px;
-    background-color: white;
-    justify-self: center;
-    height: 44px;
-    width: 153px;
-    position: relative;
-    display: flex;
-    align-items: center;
+  box-shadow: 2px 1px 6px black;
+  color: black;
+  margin-left: 46px;
+  padding-left: 12px;
+  background-color: white;
+  justify-self: center;
+  height: 44px;
+  width: 153px;
+  position: relative;
+  display: flex;
+  align-items: center;
 
-    border-radius: 120px;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 160px;
+  border-radius: 120px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 160px;
 }
 
 
 /*  COMPANY */
 .company {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    height: 300px;
-    width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
 }
 
 
 
 .company__title {
-    font-family: "Gill";
-    font-size: 46px;
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
+  font-family: "Gill";
+  font-size: 46px;
+  color: black;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 92px;
+}
+
+.company__about {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+
+  row-gap: 92px;
+}
+
+.company__item {
+  display: grid;
+
+  align-items: flex-start;
+
+  width: 456px;
+  grid-template-areas:
+    "logo title"
+    "logo subtitle"
+    "logo subtitle";
+
+}
+
+.company__item-icon {
+  grid-area: logo;
+  padding-right: 42px;
+
+  padding-top: 22px;
+}
+
+.company__item-title {
+  grid-area: title;
+  font-family: 'Gill';
+  font-weight: bold;
+  padding-bottom: 38px;
+}
+
+.company__item-subtitle {
+  grid-area: subtitle;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: lighter;
+  line-height: 25px;
 }
