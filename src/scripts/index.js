@@ -6,14 +6,14 @@ const slider = document.querySelector('.slider')
 
 function handleRightArrowClick() {
     slider.scroll({
-        left: slider.scrollLeft + 400,
+        left: slider.scrollLeft + 350,
         behavior: 'smooth'
     })
 
 }
 function handleLeftArrowClick() {
     slider.scroll({
-        left: slider.scrollLeft - 400,
+        left: slider.scrollLeft - 350,
         behavior: 'smooth'
     })
 }

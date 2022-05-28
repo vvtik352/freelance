@@ -266,19 +266,19 @@ p {
 }
 
 .slider {
-  overflow: hidden;
   display: flex;
-
-  overflow-x: scroll;
+  overflow-x: hidden;
   margin-left: 12px;
   margin-right: 12px;
 }
 
 .slider-item {
-  /* transform: translateX(-800px); */
   transition: transform 700ms;
+}
+
+.slider-item__image {
   width: 350px;
-  margin: 16px;
+  object-fit: cover;
 }
 
 .slider-arrow_left {
