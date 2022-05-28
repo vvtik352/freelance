@@ -58,6 +58,7 @@ p {
 }
 
 .header__options {
+  cursor: pointer;
   padding-top: 73px;
   margin-left: auto;
   color: white;
@@ -231,4 +232,73 @@ p {
   color: rgba(2, 60, 204, 1);
 
   white-space: nowrap;
+}
+
+
+
+/* managers */
+
+.managers {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding-bottom: 92px;
+}
+
+.managers__title {
+  margin: auto;
+  font-family: 'Gill';
+  font-size: 46px;
+  padding-bottom: 8px;
+}
+
+.managers__slider-container {
+  margin: auto;
+  display: flex;
+  background-color: rgb(58, 79, 112);
+  border-radius: 5%;
+  max-width: 70%;
+
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider {
+  overflow: hidden;
+  display: flex;
+
+  overflow-x: scroll;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.slider-item {
+  /* transform: translateX(-800px); */
+  transition: transform 700ms;
+  width: 350px;
+  margin: 16px;
+}
+
+.slider-arrow_left {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-right: 50px solid rgb(62, 132, 201);
+  border-bottom: 25px solid transparent;
+  border-radius: 15px;
+  padding-left: 8px;
+}
+
+.slider-arrow_right {
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid rgb(62, 132, 201);
+  border-bottom: 25px solid transparent;
+  border-radius: 15px;
+  padding-right: 8px;
 }
