@@ -39,6 +39,7 @@ p {
 .header__background {
   position: absolute;
   z-index: -1;
+  width: 100%;
 }
 
 .header__title {
@@ -203,11 +204,12 @@ p {
   /* border-right: 2px solid rgba(2, 60, 204, 1); */
 }
 
-.driver__statistic-item-count::after {
+.driver__statistic-item:not(:last-child)::after {
   content: '';
   position: absolute;
   padding-left: 48px;
   right: 0%;
+  bottom: 20%;
   height: 48px;
   width: 2px;
   border-right: 2px solid rgba(2, 60, 204, 1);
