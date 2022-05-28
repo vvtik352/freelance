@@ -101,7 +101,6 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 300px;
   width: 100%;
 }
 
@@ -116,12 +115,24 @@ p {
   padding-bottom: 92px;
 }
 
+.company__underline {
+  padding-bottom: 92px;
+
+  margin: auto;
+  background-size: cover;
+
+  background-image: url("../images/Underline.svg");
+}
+
 .company__about {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, auto);
 
   row-gap: 92px;
+  column-gap: 92px;
+
+  padding-bottom: 92px;
 }
 
 .company__item {
@@ -156,4 +167,66 @@ p {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: lighter;
   line-height: 25px;
+}
+
+
+/* DRIVER */
+
+.driver {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+
+  max-width: 1000px;
+}
+
+.driver__line {
+  padding-bottom: 62px;
+}
+
+.driver__statistic {
+  display: flex;
+  margin: auto;
+  flex: 1;
+  gap: 48px;
+
+  padding-bottom: 200px;
+}
+
+.driver__statistic-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 48px;
+  /* border-right: 2px solid rgba(2, 60, 204, 1); */
+}
+
+.driver__statistic-item-count::after {
+  content: '';
+  position: absolute;
+  padding-left: 48px;
+  right: 0%;
+  height: 48px;
+  width: 2px;
+  border-right: 2px solid rgba(2, 60, 204, 1);
+}
+
+.driver__statistic-item-icon {
+  padding-bottom: 32px;
+}
+
+.driver__statistic-item-count {
+  font-family: 'Gill';
+  font-size: 31px;
+  color: rgba(2, 60, 204, 1);
+  padding-bottom: 8px;
+}
+
+.driver__statistic-item-desc {
+  font-family: 'Gill';
+  color: rgba(2, 60, 204, 1);
+
+  white-space: nowrap;
 }
