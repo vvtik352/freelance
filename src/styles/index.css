@@ -881,13 +881,16 @@ input:focus {
   .comment {
     width: 300px;
   }
+
   .comment__title {
     font-size: 14px;
   }
-.comment__about{
-  font-size: 14;
-  line-height: 16px;
-}
+
+  .comment__about {
+    font-size: 14;
+    line-height: 16px;
+  }
+
   .company__item {
     width: 256px;
   }
@@ -901,7 +904,7 @@ input:focus {
   }
 
   .slider-item__image {
-    width: 175px;
+    width: 224px;
   }
 
   .company__item-icon {
@@ -947,4 +950,28 @@ input:focus {
   .comments {
     grid-template-columns: repeat(1, 361px);
   }
+
+
+  .contact {
+    background: none;
+  }
+
+  .form-container{
+    margin-left: 0;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .contact__items {
+    flex-direction: column;
+    padding-left: 24px;
+  }
+
+  .contact__item {
+    padding-bottom: 16px;
+  }
+
+  /* .width559  */
 }

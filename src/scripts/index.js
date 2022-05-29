@@ -33,18 +33,19 @@ function getOffset(el) {
   };
 }
 
+
 rightSliderArrow.addEventListener('click', () => {
-  handleRightArrowClick(slider, 322)
+  handleRightArrowClick(slider, slider.querySelector('.slider-item').clientWidth)
 })
 leftSliderArrow.addEventListener('click', () => {
-  handleLeftArrowClick(slider, 322)
+  handleLeftArrowClick(slider, slider.querySelector('.slider-item').clientWidth)
 })
 
 bankLeftSliderArrow.addEventListener('click', () => {
-  handleLeftArrowClick(bankSlider, 559)
+  handleLeftArrowClick(bankSlider, bankSlider.querySelector('.slider-item').clientWidth)
 })
 bankRightSliderArrow.addEventListener('click', () => {
-  handleRightArrowClick(bankSlider, 559)
+  handleRightArrowClick(bankSlider, bankSlider.querySelector('.slider-item').clientWidth)
 })
 
 
