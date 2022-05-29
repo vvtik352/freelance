@@ -41,8 +41,8 @@ leftSliderArrow.addEventListener('click', () => {
 })
 
 bankLeftSliderArrow.addEventListener('click', () => {
-    handleLeftArrowClick(bankSlider, 599)
+    handleLeftArrowClick(bankSlider, 559)
 })
 bankRightSliderArrow.addEventListener('click', () => {
-    handleRightArrowClick(bankSlider, 599)
+    handleRightArrowClick(bankSlider, 559)
 })
