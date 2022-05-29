@@ -63,8 +63,6 @@ const form = document.querySelector('#form')
 function handleSubmit(event) {
     event.preventDefault()
 
-    // console.error(priceInput.value);
-
     fetch(`/Send.php`, {
         method: 'POST',
         body: {
