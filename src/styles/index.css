@@ -38,6 +38,11 @@ input:focus {
   display: flex;
 
   padding-bottom: 500px;
+
+  /* width: 99%; */
+  /* height: 962px; */
+  background: url('../images/shape.svg') no-repeat;
+  background-size: cover;
 }
 
 .header__logo {
@@ -59,7 +64,8 @@ input:focus {
 .header__background {
   position: absolute;
   z-index: -1;
-  width: 100%;
+  top: 0;
+
 }
 
 .header__title {
@@ -554,37 +560,43 @@ input:focus {
 
 .contact {
   position: relative;
-  margin: auto;
   width: 100%;
-
+  display: flex;
+  justify-content: space-between;
+  width: 2500px;
+  align-items: center;
+  background-size: cover;
+  /* background-image: url('../images/map.png'); */
+  background: url('../images/map.png') no-repeat center center
 }
 
 .contact__title {
   padding-bottom: 113px;
-
+  position: relative;
+  top: 63px;
 }
 
 .contact__bg {
-  position: absolute;
+  /* position: absolute; */
   top: -71px;
-  left: 50px;
-  right: 0;
+  /* margin-left: auto; */
+  justify-self: right;
   z-index: -1;
-  /* width: 50%; */
-  margin: 0;
+  /* background-size: cover; */
+  /* background-image: url('../images/map.png'); */
+  /* width: 100%; */
+  height: inherit;
 }
 
 .form-container {
-  /* margin-top: 36px; */
-  padding-top: 83px;
+  /* position: absolute; */
+  /* padding-top: 83px; */
   display: flex;
-  width: 45%;
   flex-direction: column;
   background-color: white;
   margin-left: 10%;
-  /* box-shadow: 20px -1px 20px 16px white; */
+  /* box-shazdow: 20px -1px 20px 16px white; */
   box-shadow: 17px 16px 20px 6px white;
-  /* height: 750px; */
 }
 
 .flex {
@@ -593,7 +605,7 @@ input:focus {
 
 .form__input-container {
   display: flex;
-  width: 90%;
+  width: 97%;
   border-bottom: 1px solid black;
   margin-right: 16px;
   margin-bottom: 112px;

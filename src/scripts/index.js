@@ -46,3 +46,42 @@ bankLeftSliderArrow.addEventListener('click', () => {
 bankRightSliderArrow.addEventListener('click', () => {
     handleRightArrowClick(bankSlider, 559)
 })
+
+
+// отправка формы
+
+
+const nameInput = document.querySelector('#name')
+const phoneNumberInput = document.querySelector('#number')
+const emailInput = document.querySelector('#email')
+const priceInput = document.querySelector('#price')
+
+const submitFormButton = document.querySelector('#send-form-button')
+const form = document.querySelector('#form')
+
+
+function handleSubmit(event) {
+    event.preventDefault()
+
+    // console.error(priceInput.value);
+
+    fetch(`/Send.php`, {
+        method: 'POST',
+        body: {
+            name: nameInput.value,
+            phone: phoneNumberInput.value,
+            email: emailInput.value,
+            sum: priceInput.value
+        }
+    })
+        .then(response => {
+            nameInput.value = ''
+            phoneNumberInput.value = ''
+            emailInput.value = ''
+            priceInput.value = ''
+        }).catch(error => {
+            console.error(error)
+        })
+}
+
+form.addEventListener('submit', handleSubmit)

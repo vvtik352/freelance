@@ -14,7 +14,7 @@
   <div class="page__container">
     <header class="header">
       <div class="header__background">
-        <img class="header__background" src="./images/shape.svg" />
+        <!-- <img class="header__background" src="./images/shape.svg" /> -->
       </div>
 
       <div class="header__logo">
@@ -391,7 +391,11 @@
     </section>
 
     <section class="contact">
-      <form class="form-container">
+
+      <!-- <div class="contact__bg"> -->
+        <!-- <img class="contact__bg" src="./images/map.png" /> -->
+      <!-- </div> -->
+      <form class="form-container" id="form">
         <h2 class=" contact__title title">
           Оставить Заявку
         </h2>
@@ -400,14 +404,14 @@
             <h3 class="input__title">
               Ф.И.О :
             </h3>
-            <input class='form__input' type="text" name="surename" />
+            <input class='form__input' type="text" name="name" id='name' />
           </div>
 
           <div class="form__input-container">
             <h3 class="input__title">
               Телефон :
             </h3>
-            <input class='form__input' type="number" name="number" />
+            <input class='form__input' type="number" name="number" id='number' />
           </div>
         </div>
 
@@ -415,17 +419,17 @@
           <h3 class="input__title">
             Email :
           </h3>
-          <input class='form__input' type="email" name="mail" />
+          <input class='form__input' type="email" name="mail" id="email" />
         </div>
 
         <div class="form__input-container">
           <h3 class="input__title">
             Суммма :
           </h3>
-          <input class='form__input' type="text" name="price" />
+          <input class='form__input' type="text" name="price" id="price" />
         </div>
 
-        <button class="credit-calc__calculate  form__submit" type="submit">
+        <button class="credit-calc__calculate  form__submit" type="submit" id="send-form-button">
           ОТПРАВИТЬ
         </button>
 
@@ -467,7 +471,9 @@
           </div>
         </div>
       </form>
-      <img class="contact__bg" src="./images/map.png" />
+      <!-- <div class="contact__bg">
+        <img  src="./images/map.png"/>
+      </div> -->
     </section>
 
     <section class="credit-calc no-margin-bottom" style="height: 242px;">
@@ -501,7 +507,7 @@
       </div>
       <div class="footer__credits">
         <p class="credits">
-          <b class="lightblue " > “Брокер МСК”</b> . Кредитный брокер. Помощь в получении кредита
+          <b class="lightblue "> “Брокер МСК”</b> . Кредитный брокер. Помощь в получении кредита
         </p>
 
         <p class="copyright">
