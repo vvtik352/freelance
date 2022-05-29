@@ -3,12 +3,11 @@
 
 body {
   width: 100%;
-  max-width: 2400px;
+  max-width: 2000px;
   overflow-x: hidden;
   min-width: 400px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 0;
 }
 
 a {
@@ -338,7 +337,7 @@ input:focus {
   cursor: pointer;
   width: 0;
   height: 0;
-  width: 128px;
+  width: 88px;
   height: 96px;
   padding-left: 12px;
 }
@@ -348,7 +347,7 @@ input:focus {
   cursor: pointer;
   width: 0;
   height: 0;
-  width: 128px;
+  width: 88px;
   height: 96px;
   padding-right: 12px;
 }
@@ -830,17 +829,37 @@ input:focus {
 @media screen and (max-width:986px) {
   .header {
     background-size: cover;
+
+    height: 40px;
   }
 
 
   .header__title {
-    font-size: 32px;
+    font-size: 24px;
+
+    padding-bottom: 48px;
   }
 
   .header__subtitle {
-    font-size: 21px;
+    font-size: 14px;
   }
 
+  .header__options {
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 8px;
+  }
+
+  .number {
+    font-family: "Gill";
+
+    font-size: 14px;
+  }
+
+  .cloud {
+    height: 34px;
+    width: 123px;
+  }
 
   .header__option {
     font-size: 14px;
@@ -848,17 +867,36 @@ input:focus {
 
   .company__title {
     font-size: 24px;
+
+    padding-left: 12px;
+  }
+
+  .company__item {
+    width: 256px;
+  }
+
+  .slider-arrow_left {
+    width: 24px;
+  }
+
+  .slider-arrow_right {
+    width: 24px;
+  }
+
+  .slider-item__image {
+    width: 175px;
   }
 
   .company__item-icon {
     grid-area: logo;
     padding-right: 14px;
-
+    width: 24px;
     padding-top: 12px;
   }
 
   .company__item-title {
     font-size: 18px;
+    padding-bottom: 16px;
   }
 
   .company__item-subtitle {
