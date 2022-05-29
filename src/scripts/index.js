@@ -60,6 +60,8 @@ const submitFormButton = document.querySelector('#send-form-button')
 const form = document.querySelector('#form')
 submitFormButton.classList.add('disabled')
 
+
+//  все поля должны быть заполненны
 function handleChange(event) {
   if (nameInput.value &&
     phoneNumberInput.value &&

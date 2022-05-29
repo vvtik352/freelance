@@ -1,4 +1,5 @@
 @import url("../fonts/fonts.css");
+@import url("./dots.css");
 
 body {
   margin: 0;
@@ -98,10 +99,16 @@ input:focus {
 }
 
 .header__option {
+  cursor: pointer;
   padding: 8px;
   font-family: "Gill";
-
   font-size: 20px;
+  height: fit-content;
+  transition: border 300ms;
+}
+
+.header__option:hover {
+  border-bottom: 2px solid white;
 }
 
 .number {
@@ -251,7 +258,9 @@ input:focus {
 
 .driver__statistic-item-icon {
   padding-bottom: 32px;
+  width: 48px;
 }
+
 
 .driver__statistic-item-count {
   font-family: 'Gill';
@@ -665,6 +674,10 @@ input:focus {
   align-items: flex-start;
 }
 
+.item__icon {
+  width: 24px;
+}
+
 .contact__info {
   padding-left: 16px;
 
@@ -727,6 +740,11 @@ input:focus {
   padding-bottom: 32px;
 }
 
+.footer__icon {
+  width: 14px;
+  padding-right: 4px;
+}
+
 .credits {
   margin-left: 10%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -752,6 +770,7 @@ input:focus {
   height: 20px;
   align-self: center;
 }
+
 @media screen and (max-width:1024px) {
   .sertificates {
     grid-template-columns: repeat(1, 300px);

@@ -1,0 +1,19 @@
+.dots {
+    display: flex;
+
+    padding-top: 16px;
+}
+
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    background-color: aliceblue;
+}
+
+.dot_active {
+    background-color: rgba(0, 172, 253, 1);
+    box-shadow: 0px 0px 6px rgba(0, 172, 253, 1);
+}
