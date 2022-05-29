@@ -487,7 +487,7 @@ input:focus {
 }
 
 .width559 {
-  width: 559px;
+  width: 464px;
 }
 
 .top-spacer {
@@ -971,6 +971,19 @@ input:focus {
 
   .contact__item {
     padding-bottom: 16px;
+  }
+
+  .awards {
+    display: flex;
+    flex-direction: column;
+    /* grid-template-columns: repeat(1, auto); */
+    justify-content: center;
+    row-gap: 140px;
+    align-items: center;
+  
+    margin: auto;
+    justify-items: center;
+    width: 100%;
   }
 
   /* .width559  */
