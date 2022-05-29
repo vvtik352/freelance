@@ -867,11 +867,27 @@ input:focus {
   }
 
   .company__title {
-    font-size: 24px;
+    font-size: 16px;
 
     padding-left: 12px;
   }
 
+  .underline {
+    padding-top: 8px;
+    width: 34px;
+    height: 20px;
+  }
+
+  .comment {
+    width: 300px;
+  }
+  .comment__title {
+    font-size: 14px;
+  }
+.comment__about{
+  font-size: 14;
+  line-height: 16px;
+}
   .company__item {
     width: 256px;
   }
