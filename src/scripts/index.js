@@ -34,10 +34,10 @@ function getOffset(el) {
 }
 
 rightSliderArrow.addEventListener('click', () => {
-    handleRightArrowClick(slider, 350)
+    handleRightArrowClick(slider, 322)
 })
 leftSliderArrow.addEventListener('click', () => {
-    handleLeftArrowClick(slider, 350)
+    handleLeftArrowClick(slider, 322)
 })
 
 bankLeftSliderArrow.addEventListener('click', () => {
