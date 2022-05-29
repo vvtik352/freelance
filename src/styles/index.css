@@ -340,7 +340,7 @@ input:focus {
   height: 0;
   width: 88px;
   height: 96px;
-  /* padding-left: 12px; */
+  padding-left: 12px;
 }
 
 .slider-arrow_right {
@@ -350,7 +350,7 @@ input:focus {
   height: 0;
   width: 88px;
   height: 96px;
-  /* padding-right: 12px; */
+  padding-right: 12px;
 }
 
 
@@ -498,12 +498,16 @@ input:focus {
   border: 0;
   width: 128px;
   height: 128px;
+  padding: 0;
+
 }
 
 .bank-arrow-right {
   border: 0;
   width: 128px;
   height: 128px;
+  padding: 0;
+
 }
 
 .bank__slider-contaner {
