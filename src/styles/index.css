@@ -134,6 +134,8 @@ input:focus {
   position: relative;
   display: flex;
   flex-direction: column;
+
+  justify-content: center;
   width: 100%;
 }
 
@@ -145,7 +147,6 @@ input:focus {
   color: black;
   margin-left: auto;
   margin-right: auto;
-  padding-bottom: 92px;
 }
 
 .company__underline {
@@ -158,9 +159,10 @@ input:focus {
 }
 
 .company__about {
+  padding-top: 92px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, auto);
+  grid-template-columns: repeat(2, 456px);
 
   row-gap: 92px;
   column-gap: 92px;
@@ -503,7 +505,9 @@ input:focus {
 }
 
 .services {
-  background-color: midnightblue;
+  /* background-color: midnightblue; */
+  background: url('../images/office.jpg') no-repeat;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -602,6 +606,7 @@ input:focus {
   margin-left: 10%;
   /* box-shazdow: 20px -1px 20px 16px white; */
   box-shadow: 17px 16px 20px 6px white;
+  width: 26%;
 }
 
 .flex {
@@ -741,6 +746,12 @@ input:focus {
 }
 
 
+.underline {
+  padding-top: 16px;
+  width: 68px;
+  height: 20px;
+  align-self: center;
+}
 @media screen and (max-width:1024px) {
   .sertificates {
     grid-template-columns: repeat(1, 300px);
