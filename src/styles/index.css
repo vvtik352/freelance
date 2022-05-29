@@ -6,6 +6,11 @@ body {
   overflow-x: hidden;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 h1,
 h2,
 h3,
@@ -571,7 +576,7 @@ input:focus {
 }
 
 .contact__title {
-  padding-bottom: 113px;
+  /* padding-bottom: 113px; */
   position: relative;
   top: 63px;
 }
@@ -601,6 +606,7 @@ input:focus {
 
 .flex {
   display: flex;
+  padding-top: 113px;
 }
 
 .form__input-container {
@@ -635,11 +641,16 @@ input:focus {
   padding-right: 16px; */
 }
 
+.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
 .contact__items {
   display: flex;
   padding-top: 64px;
   justify-content: space-between;
-
+  padding-bottom: 32px;
   width: 90%;
 }
 
@@ -842,5 +853,9 @@ input:focus {
 
   .managers__slider-container {
     max-width: 78%;
+  }
+
+  .comments {
+    grid-template-columns: repeat(1, 361px);
   }
 }

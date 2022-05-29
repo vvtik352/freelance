@@ -27,16 +27,16 @@
         </p>
       </div>
       <div class="header__options">
-        <p class="header__option">Компания</p>
-        <p class="header__option">Услуги</p>
-        <p class="header__option">Кредитный калькулятор</p>
-        <p class="header__option">Контакты</p>
+        <a href="#about" class="header__option">Компания</a>
+        <a href='#service' class="header__option">Услуги</a>
+        <a href="#calculator" class="header__option">Кредитный калькулятор</a>
+        <a href='#contacts' class="header__option">Контакты</a>
         <div class="cloud">
           <p class="number">+ 7 (499) 967-84-45</p>
         </div>
       </div>
     </header>
-    <section class="company">
+    <section class="company" id='about'>
       <h2 class="company__title">
         Помощь в получении кредита по всей стране
       </h2>
@@ -183,7 +183,7 @@
       </div>
     </section>
 
-    <section class="credit-calc">
+    <section class="credit-calc" id="calculator">
       <h2 class="credit-calc__title">
         Кредитный калькулятор
       </h2>
@@ -323,7 +323,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section class="services" id='service'>
       <h2 class="services__title title text-white">
         Наши Услуги
       </h2>
@@ -391,9 +391,8 @@
     </section>
 
     <section class="contact">
-
       <!-- <div class="contact__bg"> -->
-        <!-- <img class="contact__bg" src="./images/map.png" /> -->
+      <!-- <img class="contact__bg" src="./images/map.png" /> -->
       <!-- </div> -->
       <form class="form-container" id="form">
         <h2 class=" contact__title title">
@@ -426,7 +425,7 @@
           <h3 class="input__title">
             Суммма :
           </h3>
-          <input class='form__input' type="text" name="price" id="price" />
+          <input class='form__input' type="number" name="price" id="price" />
         </div>
 
         <button class="credit-calc__calculate  form__submit" type="submit" id="send-form-button">
@@ -480,7 +479,7 @@
 
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="footer__content">
         <img class="footer__logo" src="./images/logo.svg" />
         <p class="footer__adress">
