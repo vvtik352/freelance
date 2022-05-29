@@ -2,6 +2,7 @@
 @import url("./dots.css");
 
 body {
+  margin: 0;
   width: 100%;
   max-width: 2000px;
   overflow-x: hidden;
