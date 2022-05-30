@@ -79,9 +79,25 @@ comments.scroll({
 })
 
 
-dots.forEach(dot => dot.addEventListener('click', handleDotClick))
+dots.forEach(dot => {
+  if (dot.children.item(0).checked)
+    dot.classList.toggle('dot_active')
+
+  dot.addEventListener('click', handleDotClick)
+})
 function handleDotClick(event) {
-  switch (event.target.id) {
+  event.target.children.item(0).checked = !event.target.children.item(0).checked
+
+  dots.forEach(dot => {
+    if (!dot.children.item(0).checked)
+      dot.classList.remove('dot_active')
+    else
+      dot.classList.add('dot_active')
+
+    dot.addEventListener('click', handleDotClick)
+  })
+
+  switch (event.target.children.item(0).id) {
     case 'page-1':
       comments.scroll({
         left: 0,

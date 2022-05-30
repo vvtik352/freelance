@@ -15,9 +15,7 @@
 }
 
 .dot input[type=radio] {
-    outline: none;
-    border-radius: 50%;
-
+    display: none;
 }
 
 .dot_active {
@@ -26,6 +24,6 @@
     box-shadow: 0px 0px 0px 3px rgb(0 88 129)
 }
 
-.dot:checked {
+input:checked {
     border: 6px solid black;
 }
