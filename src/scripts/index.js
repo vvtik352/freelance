@@ -8,6 +8,19 @@ const bankRightSliderArrow = document.querySelector('.bank-arrow-right')
 const slider = document.querySelector('.slider')
 const bankSlider = document.querySelector('.bank-slider')
 
+
+handleResize()
+
+document.addEventListener('resize', handleResize)
+
+function handleResize() {
+  slider.querySelectorAll('.slider-item__image').forEach(item => {
+    item.style.width = slider.clientWidth / 3 + 'px'
+  })
+  // bankSlider.querySelectorAll('.slider-item__image').forEach(item => {
+  //   item.style.width = bankSlider.clientWidth / 3 + 'px'
+  // })
+}
 function handleRightArrowClick(slider, offset) {
   slider.scroll({
     left: slider.scrollLeft + offset,
