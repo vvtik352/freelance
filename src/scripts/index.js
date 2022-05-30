@@ -15,7 +15,7 @@ document.addEventListener('resize', handleResize)
 
 function handleResize() {
   slider.querySelectorAll('.slider-item__image').forEach(item => {
-    item.style.width = slider.clientWidth / 3 + 'px'
+    item.style.width = Math.round(slider.clientWidth / 3) + 'px'
   })
   // bankSlider.querySelectorAll('.slider-item__image').forEach(item => {
   //   item.style.width = bankSlider.clientWidth / 3 + 'px'
@@ -60,6 +60,49 @@ bankLeftSliderArrow.addEventListener('click', () => {
 bankRightSliderArrow.addEventListener('click', () => {
   handleRightArrowClick(bankSlider, bankSlider.querySelector('.slider-item').clientWidth)
 })
+
+
+
+// обработка блока comments со слайдером в виде точек
+
+const comments = document.querySelector('.comments')
+
+comments.querySelectorAll('.comment').forEach(item => {
+  item.style.minWidth = Math.round(comments.clientWidth / 3) - 36 + 'px'
+})
+
+const dots = document.querySelectorAll('.dot')
+
+comments.scroll({
+  left: (comments.clientWidth - 16),
+  behavior: 'smooth'
+})
+
+
+dots.forEach(dot => dot.addEventListener('click', handleDotClick))
+function handleDotClick(event) {
+  switch (event.target.id) {
+    case 'page-1':
+      comments.scroll({
+        left: 0,
+        behavior: 'smooth'
+      })
+      break
+    case 'page-2':
+      comments.scroll({
+        left: (comments.clientWidth - 16),
+        behavior: 'smooth'
+      })
+      break
+    case 'page-3':
+      comments.scroll({
+        left: comments.scrollLeft + (comments.clientWidth * 2),
+        behavior: 'smooth'
+      })
+      break
+  }
+}
+
 
 
 // отправка формы

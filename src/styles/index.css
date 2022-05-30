@@ -524,6 +524,7 @@ input:focus {
 }
 
 .services {
+  position: relative;
   /* background-color: midnightblue; */
   background: url('../images/office.jpg') no-repeat;
   background-size: cover;
@@ -532,14 +533,17 @@ input:focus {
   align-items: center;
   margin-top: 8px;
   padding: 80px;
+  width: 100%;
+  overflow: hidden;
 }
 
 
 .comments {
-  display: grid;
+  position: relative;
+  overflow: hidden;
+  display: flex;
   padding-top: 82px;
-  grid-template-columns: repeat(3, 361px);
-  column-gap: 36px;
+  width: 80%;
 }
 
 .comment {
@@ -551,9 +555,8 @@ input:focus {
   border-radius: 16px;
   align-items: center;
   width: 361px;
-  height: 324px;
+  /* height: fit-content; */
   margin: 16px;
-
   padding-top: 52px;
 }
 
@@ -954,7 +957,7 @@ input:focus {
   }
 
   .comments {
-    grid-template-columns: repeat(1, 361px);
+    flex-direction: column;
   }
 
 
@@ -962,7 +965,7 @@ input:focus {
     background: none;
   }
 
-  .form-container{
+  .form-container {
     margin-left: 0;
   }
 
@@ -986,7 +989,7 @@ input:focus {
     justify-content: center;
     row-gap: 140px;
     align-items: center;
-  
+
     margin: auto;
     justify-items: center;
     width: 100%;
@@ -996,7 +999,7 @@ input:focus {
     width: 270px;
   }
 
-  .managers__title{
+  .managers__title {
     font-size: 24px;
   }
 }
