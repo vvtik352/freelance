@@ -538,12 +538,19 @@ input:focus {
   /* max-width: 736px;  */
   width: fit-content;
   padding-top: 150px;
-  padding-bottom: 100px;
+  padding-bottom: 60px;
 }
 
 .bank-slider {
-  /* justify-content: center; */
-  margin: 0;
+  /* width: 300px; */
+}
+
+/*  для firefox устанавливаем ширину для блока слайдера иначе будет жопа */
+@-moz-document url-prefix() {
+  .bank-slider {
+    width: 486px;
+    overflow-x: scroll;
+  }
 }
 
 .services {

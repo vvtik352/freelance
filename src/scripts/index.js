@@ -17,10 +17,19 @@ function handleResize() {
   slider.querySelectorAll('.slider-item__image').forEach(item => {
     item.style.width = Math.round(slider.clientWidth / 3) + 'px'
   })
+
+  document.querySelector('.bank-arrow-left').style.width = Math.round(bankSlider.clientWidth / 4) + 'px'
+  document.querySelector('.bank-arrow-left').style.height = Math.round(bankSlider.clientWidth / 4) + 'px'
+  document.querySelector('.bank-arrow-right').style.width = Math.round(bankSlider.clientWidth / 4) + 'px'
+  document.querySelector('.bank-arrow-right').style.height = Math.round(bankSlider.clientWidth / 4) + 'px'
+
   bankSlider.querySelectorAll('.slider-item__image').forEach(item => {
+    console.error(bankSlider.clientWidth);
     item.style.width = bankSlider.clientWidth + 'px'
   })
 }
+
+
 function handleRightArrowClick(slider, offset) {
   slider.scroll({
     left: slider.scrollLeft + offset,
