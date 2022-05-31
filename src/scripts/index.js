@@ -17,9 +17,9 @@ function handleResize() {
   slider.querySelectorAll('.slider-item__image').forEach(item => {
     item.style.width = Math.round(slider.clientWidth / 3) + 'px'
   })
-  // bankSlider.querySelectorAll('.slider-item__image').forEach(item => {
-  //   item.style.width = bankSlider.clientWidth / 3 + 'px'
-  // })
+  bankSlider.querySelectorAll('.slider-item__image').forEach(item => {
+    item.style.width = bankSlider.clientWidth + 'px'
+  })
 }
 function handleRightArrowClick(slider, offset) {
   slider.scroll({

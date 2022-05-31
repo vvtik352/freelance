@@ -1,6 +1,10 @@
 @import url("../fonts/fonts.css");
 @import url("./dots.css");
 
+* {
+  scrollbar-width: none;
+}
+
 body {
   margin: 0;
   width: 100%;
@@ -512,8 +516,27 @@ input:focus {
 
 }
 
+@media screen and (max-width: 1246px) {
+  .bank-arrow-left {
+    border: 0;
+    width: 86px;
+    height: 86px;
+    padding: 0;
+
+  }
+
+  .bank-arrow-right {
+    border: 0;
+    width: 86px;
+    height: 86px;
+    padding: 0;
+
+  }
+}
+
 .bank__slider-contaner {
-  max-width: 736px;
+  /* max-width: 736px;  */
+  width: fit-content;
   padding-top: 150px;
   padding-bottom: 100px;
 }
@@ -875,9 +898,13 @@ input:focus {
     font-size: 14px;
   }
 
-  .company__title {
-    font-size: 16px;
+  .company {
+    padding-top: 24px;
+  }
 
+  .company__title {
+    font-size: 24px;
+    text-align: center;
     padding-left: 12px;
   }
 
@@ -912,6 +939,14 @@ input:focus {
     width: 24px;
   }
 
+  .bank-arrow-left {
+    width: 46px;
+  }
+
+  .bank-arrow-right {
+    width: 46px;
+  }
+
   .slider-item__image {
     width: 174px;
   }
@@ -936,6 +971,10 @@ input:focus {
     grid-template-columns: repeat(1, auto);
   }
 
+  .driver__statistic {
+    padding-bottom: 100px;
+  }
+
   .driver__statistic-item-count {
     font-size: 14px;
   }
@@ -956,8 +995,13 @@ input:focus {
     max-width: 78%;
   }
 
+  .dots {
+    display: none;
+  }
+
   .comments {
     flex-direction: column;
+    align-items: center;
   }
 
 
@@ -980,6 +1024,10 @@ input:focus {
 
   .contact__item {
     padding-bottom: 16px;
+  }
+
+  .credit-calc {
+    height: 150px !important;
   }
 
   .awards {
