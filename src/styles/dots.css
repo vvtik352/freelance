@@ -7,9 +7,9 @@
 
 .dot {
     cursor: pointer;
-    width: 10px;
-    height: 10px;
-    margin: 4px;
+    width: .5vw;
+    height: .5vw;
+    margin: 0.2vw;
     border-radius: 50%;
     background-color: aliceblue;
 }

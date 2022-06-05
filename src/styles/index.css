@@ -8,7 +8,7 @@
 body {
   margin: 0;
   width: 100%;
-  max-width: 2000px;
+  /* max-width: 2000px; */
   overflow-x: hidden;
   min-width: 400px;
   margin-left: auto;
@@ -38,7 +38,7 @@ input:focus {
 .title {
   font-family: "Gill";
 
-  font-size: 44px;
+  font-size: 2vw;
 
 }
 
@@ -71,7 +71,7 @@ input:focus {
 }
 
 .header__logo-image {
-  width: 164px;
+  width: 10vw;
   margin: auto;
 
   padding-bottom: 86px;
@@ -110,7 +110,7 @@ input:focus {
 
 .header__option {
   cursor: pointer;
-  padding: 8px;
+  padding: 0.5vw;
   font-family: "Gill";
   font-size: 20px;
   height: fit-content;
@@ -135,7 +135,8 @@ input:focus {
   background-color: white;
   justify-self: center;
   height: 44px;
-  width: 153px;
+  width: fit-content;
+  padding-right: 16px;
   position: relative;
   display: flex;
   align-items: center;
@@ -160,7 +161,7 @@ input:focus {
 
 .company__title {
   font-family: "Gill";
-  font-size: 46px;
+  font-size: 2vw;
   color: black;
   margin-left: auto;
   margin-right: auto;
@@ -179,7 +180,7 @@ input:focus {
   padding-top: 92px;
   margin: auto;
   display: grid;
-  grid-template-columns: repeat(2, 456px);
+  grid-template-columns: repeat(2, 20vw);
 
   row-gap: 92px;
   column-gap: 92px;
@@ -192,7 +193,7 @@ input:focus {
 
   align-items: flex-start;
 
-  width: 456px;
+  width: 20vw;
   grid-template-areas:
     "logo title"
     "logo subtitle"
@@ -229,18 +230,19 @@ input:focus {
   flex-direction: column;
   margin: auto;
 
-  max-width: 1000px;
+  max-width: 70%;
 }
 
 .driver__line {
-  padding-bottom: 62px;
+  padding-bottom: 2vw;
+  /* background-size: cover; */
 }
 
 .driver__statistic {
   display: flex;
   margin: auto;
   flex: 1;
-  gap: 48px;
+  gap: 10vw;
 
   padding-bottom: 200px;
 }
@@ -261,20 +263,20 @@ input:focus {
   padding-left: 48px;
   right: 0%;
   bottom: 20%;
-  height: 48px;
+  height: 5vw;
   width: 2px;
   border-right: 2px solid rgba(2, 60, 204, 1);
 }
 
 .driver__statistic-item-icon {
-  padding-bottom: 32px;
-  width: 48px;
+  padding-bottom: 1vw;
+  width: 3vw;
 }
 
 
 .driver__statistic-item-count {
   font-family: 'Gill';
-  font-size: 31px;
+  font-size: 1.5vw;
   color: rgba(2, 60, 204, 1);
   padding-bottom: 8px;
 }
@@ -282,8 +284,9 @@ input:focus {
 .driver__statistic-item-desc {
   font-family: 'Gill';
   color: rgba(2, 60, 204, 1);
+  font-size: 0.5vw;
 
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 
@@ -302,7 +305,7 @@ input:focus {
 .managers__title {
   margin: auto;
   font-family: 'Gill';
-  font-size: 46px;
+  font-size: 2vw;
   padding-bottom: 8px;
 }
 
@@ -331,7 +334,9 @@ input:focus {
 }
 
 .slider-item__image {
-  width: 332px;
+  /* width: 332px; */
+  /* width: calc(100% + 10vw); */
+
   object-fit: cover;
   justify-self: center;
 
@@ -376,7 +381,7 @@ input:focus {
 
 .credit-calc__title {
   font-family: 'Gill';
-  font-size: 46px;
+  font-size: 2vw;
   color: white;
   padding-bottom: 75px;
 }
@@ -384,15 +389,17 @@ input:focus {
 .credit-calc__calculate {
   cursor: pointer;
   font-family: 'Gill';
-  font-size: 26px;
+  font-size: 2vw;
   color: white;
   padding-bottom: 75px;
-  width: 500px;
+  width: fit-content;
   background: rgb(109, 123, 255);
   background: linear-gradient(90deg, rgba(109, 123, 255, 1) 24%, rgba(72, 232, 250, 1) 96%, rgba(108, 220, 232, 1) 100%, rgba(11, 39, 141, 1) 100%);
   border: none;
-  border-radius: 30px;
+  border-radius: 10vw;
   padding: 12px;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
 
@@ -402,10 +409,10 @@ input:focus {
 .sertificates {
   display: grid;
 
-  grid-template-columns: repeat(2, 300px);
+  grid-template-columns: repeat(2, 10vw);
 
-  row-gap: 65px;
-  column-gap: 65px;
+  row-gap: 10vw;
+  column-gap: 15vw;
 }
 
 
@@ -416,7 +423,7 @@ input:focus {
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 2px 11px 16px rgb(199, 199, 199);
-  width: 300px;
+  width: 20vw;
   padding: 8px 4px;
   transition: transform 300ms;
 }
@@ -443,19 +450,21 @@ input:focus {
 }
 
 .sertificate__image {
-  width: 300px;
-  padding-bottom: 22px;
+  width: 20vw;
+  height: 14vw;
+  padding-bottom: 1vw;
 }
 
 .sertificate__title {
   font-family: 'Gill';
-  font-size: 20px;
+  font-size: 1.2vw;
   padding-left: 25px;
   padding-bottom: 42px;
 }
 
 .sertificate__bank {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1vw;
   padding-left: 25px;
   color: gray;
   padding-bottom: 16px;
@@ -468,13 +477,16 @@ input:focus {
   display: grid;
   grid-template-columns: repeat(2, auto);
   justify-content: center;
-  column-gap: 100px;
+  column-gap: 20vw;
   row-gap: 240px;
   align-items: center;
 
   margin: auto;
   justify-items: center;
   width: 90%;
+
+  padding-bottom: 1vw;
+  padding-top: 1vw;
 }
 
 /* details__title */
@@ -484,12 +496,16 @@ input:focus {
 }
 
 .details__title {
+
+  font-size: 2vw;
   max-width: 450px;
   padding-bottom: 98px;
 }
 
 .details__descr {
-  width: 342px;
+  font-size: 1vw;
+  line-height: 1.2vw;
+  width: 14vw;
 }
 
 .width559 {
@@ -593,7 +609,7 @@ input:focus {
 .comment__title {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: #4dedff;
-  font-size: 16px;
+  font-size: 1vw;
   font-weight: 900;
   padding-bottom: 16px;
 }
@@ -601,8 +617,8 @@ input:focus {
 .comment__about {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: rgb(46, 46, 46);
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1vw;
+  line-height: 1.2vw;
   text-align: center;
   padding-bottom: 36px;
   padding-left: 42px;
@@ -621,14 +637,15 @@ input:focus {
 
 .contact {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   width: 2500px;
   align-items: center;
   background-size: cover;
   /* background-image: url('../images/map.png'); */
-  background: url('../images/map.png') no-repeat center center
+  background: url('../images/map.png') no-repeat center center;
+  /* background-size: 100% 100%; */
 }
 
 .contact__title {
@@ -658,7 +675,7 @@ input:focus {
   margin-left: 10%;
   /* box-shazdow: 20px -1px 20px 16px white; */
   box-shadow: 17px 16px 20px 6px white;
-  width: 26%;
+  /* width: 26%; */
 }
 
 .flex {
@@ -679,7 +696,7 @@ input:focus {
   font-weight: 900;
   height: fit-content;
   align-self: center;
-
+  font-size: 1vw;
   white-space: nowrap;
 }
 
@@ -687,13 +704,14 @@ input:focus {
   border: none;
   width: 72%;
   font-family: 'Gill';
-  font-size: 18px;
+  font-size: 1.2vw;
   padding-left: 16px;
 }
 
 .form__submit {
-  width: 200px;
-  font-size: 18px;
+  width: 80%;
+  font-size: 1vw;
+  text-align: center;
   /* padding-left: 16px;
   padding-right: 16px; */
 }
@@ -718,20 +736,20 @@ input:focus {
 }
 
 .item__icon {
-  width: 24px;
+  width: 1.2vw;
 }
 
 .contact__info {
   padding-left: 16px;
-
-  max-width: 200px;
+  font-size: 1vw;
+  max-width: 10vw;
 }
 
 .info__title {
   font-family: 'Gill';
 
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 0.8vw;
+  line-height: 1vw;
 
   color: dodgerblue;
 }
@@ -739,8 +757,8 @@ input:focus {
 .info__sub {
   font-family: 'Gill';
   color: rgb(46, 46, 46);
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 0.8vw;
+  line-height: 1vw;
 }
 
 .no-margin-bottom {
@@ -754,18 +772,20 @@ input:focus {
 
 .footer__content {
   padding-left: 10%;
-  width: 235px;
+  width: 10vw;
 }
 
 .footer__logo {
   padding-top: 32px;
-  padding-bottom: 32px;
+  padding-bottom: 2vw;
+  width: 8vw;
 }
 
 .footer__adress {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   color: white;
-  line-height: 24px;
+  font-size: 0.8vw;
+  line-height: 1.2vw;
 }
 
 .footer__icon-text {
@@ -779,8 +799,8 @@ input:focus {
 
   display: flex;
   justify-content: space-between;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 1.5vw;
+  padding-bottom: 1.5vw;
 }
 
 .footer__icon {
@@ -791,7 +811,7 @@ input:focus {
 .credits {
   margin-left: 10%;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 14px;
+  font-size: 0.8vw;
   color: white;
 }
 
@@ -801,15 +821,15 @@ input:focus {
 
 .copyright {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 14px;
+  font-size: 0.8vw;
   margin-right: 24px;
   color: #474d54;
 }
 
 
 .underline {
-  padding-top: 16px;
-  width: 68px;
+  padding-top: 1vw;
+  width: 3vw;
   height: 20px;
   align-self: center;
 }
@@ -833,36 +853,67 @@ input:focus {
     background-size: cover;
   }
 
+  /* TODO */
 
   .header__title {
-    font-size: 92px;
+    font-size: 4vw;
   }
 
   .header__subtitle {
-    font-size: 51px;
+    font-size: 2vw;
   }
 
 
   .header__option {
-    font-size: 35px;
+    font-size: 1vw;
   }
 
+  .number {
+    font-size: 1vw;
+  }
+
+  .cloud {
+    height: fit-content;
+    padding: 16px;
+  }
+
+  .company__title {
+    padding-top: 132px;
+  }
+
+  .company__about {
+    column-gap: 10vw;
+    row-gap: 10vw;
+    padding-bottom: 356px;
+    padding-top: 356px;
+  }
+
+  .company__item {
+    /* width: 700px; */
+  }
 
   .company__item-icon {
     grid-area: logo;
     padding-right: 42px;
-
+    width: 2vw;
     padding-top: 22px;
   }
 
   .company__item-title {
-    font-size: 35px;
+    font-size: 1vw;
   }
+
 
   .company__item-subtitle {
-    font-size: 24px;
-
+    font-size: 0.8vw;
+    line-height: 55px;
   }
+
+  .contact {
+    width: 4500px;
+  }
+
+
 }
 
 
@@ -922,7 +973,7 @@ input:focus {
   }
 
   .comment {
-    width: 300px;
+    width: 10vw;
   }
 
   .comment__title {
